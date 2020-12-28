@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title Taller Responsive
+	link(rel="shortcut icon", href="./favicon.ico")
+	meta(name="description", content="Escribe una descripción breve del proyecto")
+	meta(name="author", content="Escribe la persona o empresa que esta desarrollando el proyecto")
+	meta(name="viewport", content="initial-scale=1, maximum-scale=1")
+	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css")
+	link(rel="stylesheet", href="css/estilos.css")
+
+body
+	include global/base-datos
+	header.py-4
+		.container.mx-auto
+			div(class="lg:items-center lg:flex")
+				div(class="lg:w-1/2")
+					figure
+						img(src="/img/logo.png", alt="logo")
+				div(class="lg:w-1/2")
+					nav(class="mt-4 lg:mt-0 flex justify-around")
+						a(href="#" class="text-xl font-bold lg:text-3xl") Inicio
+						a(href="#" class="text-xl font-bold lg:text-3xl") Nosotros
+						a(href="#" class="text-xl font-bold lg:text-3xl") Contacto
+
+	main
+		section
+			.container.mx-auto
+				div(class="lg:items-center lg:flex")
+					article(class="lg:w-6/12")
+						h1(class="text-7xl font-bold") Dale alegría a tu mascota
+						p(class="text-2xl mt-4") La plataforma que encontrarás la comida, accesorios,etc para tu engreido(a)
+						a.btn-comenzar Comenzar
+					article(class="mt-6 lg:w-6/12 lg:mt-0")
+						figure
+							img(src="/img/banner.png", class="mx-auto")
+		section.mt-4
+			.container.mx-auto
+				h2.text-center.text-6xl Nuestras ofertas por Navidad
+				.list.items-center.flex.flex-wrap.justify-around
+					each item in productos
+						article.pb-6
+							figure
+								img(src= item.imagen)
+							p.px-3.mt-3= item.description
+							h3.px-3= item.price
+							a(href= item.url) Comprar
+
+
+
+	script(src="/js/app.js")

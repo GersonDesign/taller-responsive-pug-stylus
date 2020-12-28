@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Mulish:wght@400;700&display=swap')
+@import 'nib'
+@import './global/color.styl'
+
+img
+  max-width 100%
+
+body
+	font-family 'Mulish', sans-serif
+	font-size 16px
+
+figure
+	margin 0
+	padding 0
+
+header
+	figure
+		img
+			max-width 330px
+	nav
+		a
+			color negro
+			font-family 'Montserrat', sans-serif
+			transition all 0.3s
+			&:hover
+				color morado
+				transform scale(1.1)
+
+h1
+h2
+	color azulOscuro
+	font-family 'Montserrat', sans-serif
+	font-weight bold
+
+.btn-comenzar
+	align-items center
+	background linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%)
+	border-radius 33px
+	color white
+	cursor pointer
+	display flex
+	font-size 1.5rem
+	font-weight bold
+	height 60px
+	justify-content center
+	margin-top 20px
+	transition all 0.3s
+	width 230px
+	&:hover
+		background white
+		color morado
+
+.list
+	article
+		box-shadow 0px 0px 4px rgba(0, 0, 0, 0.25)
+		border-radius 20px
+		margin-top 30px
+		width 330px
+		p
+			font-size 1.1rem
+		h3
+			color morado
+			font-size 1.4rem
+			font-weight bold
+		a
+			align-items center
+			background linear-gradient(44.11deg, #4B16E0 15.75%, #191CFC 84.63%)
+			border-radius 33px
+			color white
+			display flex
+			height 50px
+			font-size 1.2rem
+			font-weight bold
+			justify-content center
+			margin 10px auto 0 auto
+			width 180px
+
+/*
+
+section
+  align-items center
+  display flex
+  flex-wrap wrap
+  margin 30px auto 0 auto
+  a
+	  text-decoration none
+@media screen and (max-width: 1023px)
+	section
+		div
+			order 1
+		figure
+			order 2
+
+@media screen and (min-width: 1024px)
+	section
+		width 80%
+		div
+			margin-left 4%
+			width 55%
+		figure
+			width 40%
+*/
