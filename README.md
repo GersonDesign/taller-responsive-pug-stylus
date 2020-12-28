@@ -1,5 +1,5 @@
 
-# Base maquetación para usar Pug y Stylus
+# Taller Responsive Pug, Stylus, Tailwindcss
 --------------------------------------------------------
 # Descripción
 Este repositorio es creado para que tengas una base cuando vayas iniciar un proyecto usando los pre-procesadores para HTML, CSS llamados PUG y Stylus, a parte podrás crear varios archivos .js, el proyecto se va encargar unirlo en un solo, así solo tendrás un archivo .js en todo el proyecto, también de optimizar las imágenes que vayas colocando en la carpeta img y por el último tienes la opción de generar tu favicon.
